@@ -23,6 +23,11 @@ body {
 
 ol, ul {
   list-style: none; }
+  
+  h1 {
+font-size: 5em;
+color: DodgerBlue;
+}
 
 table {
   border-collapse: collapse;
