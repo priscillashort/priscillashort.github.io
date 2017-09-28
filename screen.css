@@ -20,9 +20,20 @@ time, mark, audio, video {
 
 body {
   line-height: 1; }
+  
+header,
+h1 {
+  text-align: center;
+  font-family: CGF Locust Resistance;
+  font-size: 50px;
+  color: lightgray;
+  -webkit-text-stroke: 1.5px #000;
+}
+
 
 ol, ul {
   list-style: none; }
+  
   
   h1 {
 font-size: 5em;
@@ -52,7 +63,11 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 
 body {
   font-family: sans-serif;
-  color: #2a2a2a; }
+  color: Black;
+  text-align: center;
+  font-family: CGF Locust Resistance;
+  background-image: url("testimage.gif");
+  background-color: #cccccc;  }
 
 a {
   color: #0388a6; }
