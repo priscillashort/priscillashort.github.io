@@ -20,26 +20,44 @@ time, mark, audio, video {
 
   body {
   font-family: sans-serif;
-  color: DodgerBlue;
+  color: Red;
   text-align: center;
   font-family: CGF Locust Resistance;
   background-image: url("testimage.gif");
   background-color: #cccccc;  
   line-height: 1; }
   
+h2 {
+  background-image: url("testimage1.gif");
+  width:100%;        
+  margin-left:auto;
+  margin-right:auto;
+  background-position:center;
+  background-repeat:no-repeat;
+}
   
 header,
 h1 {
   text-align: center;
-  font-family: CGF Locust Resistance;
+  font-family: Brush Script MT;
   font-size: 70px;
   color: lightgray;
   -webkit-text-stroke: 1.5px #000;
-  background-image: url("aroundtitle.gif")
+  background-image: url("GradientBackground.gif");
+  width:100%;        
+  margin-left:auto;
+  margin-right:auto;
+  background-position:center;
+  background-repeat:no-repeat;
 }
 
 p {
-  background-image: url("aroundtitle.gif")
+  background-image: url("GradientBackgroundCream.gif");
+  width:100%;        
+  margin-left:auto;
+  margin-right:auto;
+  background-position:center;
+  background-repeat:no-repeat;
 }
 
 
