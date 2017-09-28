@@ -34,6 +34,10 @@ h2 {
   margin-right:auto;
   background-position:center;
   background-repeat:no-repeat;
+  text-align: center;
+  font-family: Brush Script MT;
+  font-size: 70px;
+  color: lightgray;
 }
   
 header,
