@@ -28,15 +28,19 @@ time, mark, audio, video {
   line-height: 1; }
   
 h2 {
-  background-image: url("testimage1.gif");
+  background-image: url("BackgroundCocc.gif");
   width:100%;        
   margin-left:auto;
   margin-right:auto;
-  background-position:center;
+  margin-top:30px;
+  margin-bottom:30px;
+  background-size: 600px;
+  background-position: center;
+  background-position-y: 0px;
   background-repeat:no-repeat;
   text-align: center;
   font-family: Brush Script MT;
-  font-size: 70px;
+  font-size: 120px;
   color: lightgray;
 }
   
