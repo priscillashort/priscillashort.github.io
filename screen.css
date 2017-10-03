@@ -24,6 +24,7 @@ time, mark, audio, video {
   text-align: center;
   font-family: CGF Locust Resistance;
   background-image: url("testimage.gif");
+  background-repeat:no-repeat;
   background-color: #cccccc;  
   line-height: 1; }
   
