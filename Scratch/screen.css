@@ -20,29 +20,12 @@ time, mark, audio, video {
 
   body {
   font-family: sans-serif;
-  color: Red;
+  color: #1D0E0E;
   text-align: center;
   font-family: CGF Locust Resistance;
   background-image: url("testimage.gif");
   background-color: #cccccc;  
-  line-height: 1; }
-  
-h2 {
-  background-image: url("BackgroundCocc.gif");
-  width:100%;        
-  margin-left:auto;
-  margin-right:auto;
-  margin-top:30px;
-  margin-bottom:30px;
-  background-size: 600px;
-  background-position: center;
-  background-position-y: 0px;
-  background-repeat:no-repeat;
-  text-align: center;
-  font-family: Brush Script MT;
-  font-size: 120px;
-  color: lightgray;
-}
+  line-height: 2; }
   
 header,
 h1 {
@@ -56,27 +39,42 @@ h1 {
   margin-left:auto;
   margin-right:auto;
   background-position:center;
-  background-repeat:no-repeat;
-}
+  background-repeat:no-repeat; }
 
 p {
-  background-image: url("GradientBackgroundCream.gif");
+  background-image: -webkit-gradient(linear, left top, left bottom, 
+  from(gray), to(#4D0D0D));
+  background-image: -webkit-linear-gradient(top, gray, #4D0D0D);
+  background-image: -moz-linear-gradient(top, gray, #4D0D0D);
+  background-image: linear-gradient(to bottom, gray, #4D0D0D);;
   width:100%;        
   margin-left:auto;
   margin-right:auto;
   background-position:center;
-  background-repeat:no-repeat;
-}
-
+  background-repeat:no-repeat; }
 
 ol, ul {
   list-style: none; }
   
-  
-  h1 {
+h1 {
 font-size: 5em;
-color: DodgerBlue;
-}
+color: DodgerBlue; } 
+
+h2 {
+  background-image: url("BackgroundCocc.gif");
+  width:100%;        
+  margin-left:auto;
+  margin-right:auto;
+  margin-top:30px;
+  margin-bottom:30px;
+  background-size: 600px;
+  background-position: center;
+  background-position-y: 0px;
+  background-repeat:no-repeat;
+  text-align: center;
+  font-family: Brush Script MT;
+  font-size: 65px;
+  color: lightgray; }
 
 table {
   border-collapse: collapse;
@@ -99,11 +97,10 @@ a img {
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
   display: block; }
 
-
 a {
-  color: #0388a6; }
+  color: #0E5464; }
   a:hover {
-    color: #009ce0; }
+    color: #63C1E6; }
 
 #main {
   padding: 50px; }
