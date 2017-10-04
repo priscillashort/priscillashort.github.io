@@ -18,6 +18,8 @@ time, mark, audio, video {
   font: inherit;
   vertical-align: baseline; }
 
+
+
   body {
   font-family: sans-serif;
   color: Red;
@@ -78,6 +80,10 @@ font-size: 5em;
 color: DodgerBlue;
 }
 
+h1:active {
+color: black;
+}
+
 table {
   border-collapse: collapse;
   border-spacing: 0; }
@@ -104,6 +110,10 @@ a {
   color: #0388a6; }
   a:hover {
     color: #009ce0; }
+
+a {
+  color: black;
+  }
 
 #main {
   padding: 50px; }
