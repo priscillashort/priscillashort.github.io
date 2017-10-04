@@ -18,17 +18,45 @@ time, mark, audio, video {
   font: inherit;
   vertical-align: baseline; }
 
-
-
   body {
   font-family: sans-serif;
-  color: Red;
+  color: #1D0E0E;
   text-align: center;
   font-family: CGF Locust Resistance;
   background-image: url("testimage.gif");
   background-color: #cccccc;  
-  line-height: 1; }
+  line-height: 2; }
   
+header,
+h1 {
+  text-align: center;
+  font-family: Brush Script MT;
+  font-size: 5em;
+  color: DodgerBlue;
+  -webkit-text-stroke: 1.5px #000;
+  background-image: url("GradientBackground.gif");
+  width:100%;        
+  margin-left:auto;
+  margin-right:auto;
+  background-position:center;
+  background-repeat:no-repeat; }
+
+p {
+  background-image: -webkit-gradient(linear, left top, left bottom, 
+  from(gray), to(#4D0D0D));
+  background-image: -webkit-linear-gradient(top, gray, #4D0D0D);
+  background-image: -moz-linear-gradient(top, gray, #4D0D0D);
+  background-image: linear-gradient(to bottom, gray, #4D0D0D);;
+  width:100%;        
+  margin-left:auto;
+  margin-right:auto;
+  -webkit-text-stroke: 1.1px #FFCACA;
+  background-position:center;
+  background-repeat:no-repeat; }
+
+ol, ul {
+  list-style: none; }
+
 h2 {
   background-image: url("BackgroundCocc.gif");
   width:100%;        
@@ -42,43 +70,8 @@ h2 {
   background-repeat:no-repeat;
   text-align: center;
   font-family: Brush Script MT;
-  font-size: 120px;
-  color: lightgray;
-}
-  
-header,
-h1 {
-  text-align: center;
-  font-family: Brush Script MT;
-  font-size: 70px;
-  color: lightgray;
-  -webkit-text-stroke: 1.5px #000;
-  background-image: url("GradientBackground.gif");
-  width:100%;        
-  margin-left:auto;
-  margin-right:auto;
-  background-position:center;
-  background-repeat:no-repeat;
-}
-
-p {
-  background-image: url("GradientBackgroundCream.gif");
-  width:100%;        
-  margin-left:auto;
-  margin-right:auto;
-  background-position:center;
-  background-repeat:no-repeat;
-}
-
-
-ol, ul {
-  list-style: none; }
-  
-  
-  h1 {
-font-size: 5em;
-color: DodgerBlue;
-}
+  font-size: 65px;
+  color: lightgray; }
 
 h1:active {
 color: black;
@@ -105,15 +98,10 @@ a img {
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
   display: block; }
 
-
 a {
-  color: #0388a6; }
+  color: #0E5464; }
   a:hover {
-    color: #009ce0; }
-
-a {
-  color: black;
-  }
+    color: #63C1E6; }
 
 #main {
   padding: 50px; }
