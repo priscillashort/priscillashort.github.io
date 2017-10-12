@@ -147,12 +147,13 @@ a {
 
 /* if mobile device max width 480px */
 @media only screen and (max-device-width: 480px) {
+    /* using this section works for mobile devices */
     body {
     font-family: sans-serif;
     color: #1D0E0E;
     text-align: center;
     font-family: CGF Locust Resistance;
-    background-image: url("testimage1.gif");
+    background-image: url("testimage.gif");
     background-color: #cccccc;  
     line-height: 2; }
    .mobile_device_480px{display: block;}
