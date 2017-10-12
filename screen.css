@@ -149,12 +149,29 @@ a {
 @media only screen and (max-device-width: 480px) {
     /* using this section works for mobile devices */
     body {
-    font-family: sans-serif;
-    color: #1D0E0E;
-    text-align: center;
-    font-family: CGF Locust Resistance;
-    background-image: url("testimage.gif");
-    background-color: #cccccc;  
-    line-height: 2; }
+      font-family: sans-serif;
+      color: #1D0E0E;
+      text-align: center;
+      font-family: CGF Locust Resistance;
+      background-image: url("testimage.gif");
+      background-color: #cccccc;  
+      line-height: 2; }
+    header,
+    h1 {
+      text-align: center;
+      font-family: Brush Script MT;
+      font-size: 5em;
+      color: DodgerBlue;
+      -webkit-text-stroke: 1.5px #000;
+      background-image: -webkit-gradient(linear, left top, left bottom, 
+      from(gray), to(black));
+      background-image: -webkit-linear-gradient(top, gray, black);
+      background-image: -moz-linear-gradient(top, gray, black);
+      background-image: linear-gradient(to bottom, gray, black);;
+      width:100%;        
+      margin-left:auto;
+      margin-right:auto;
+      background-position:center;
+      background-repeat:no-repeat; }
    .mobile_device_480px{display: block;}
    .desktop {display: none;} }
