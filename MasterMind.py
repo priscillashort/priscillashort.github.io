@@ -37,14 +37,37 @@
 #   Report result (easy)
 #       Optional: Repeat until guessed (easy)
 
-x = ['R','R','G','B']
+#Generate Rondom Code
+ClrOptions = ['R','G','B','W']
+import random
+Clr1 = random.choice(ClrOptions)
+Clr2 = random.choice(ClrOptions)
+Clr3 = random.choice(ClrOptions)
+Clr4 = random.choice(ClrOptions)
+Code = [Clr1, Clr2, Clr3, Clr4]
+print(Code)
+
+#Get User Guess
+myGuess = input('Please choose a 4 digit combination of R(Red), G(Green), B(Blue), and W(White): ')
+myGuess = myGuess.upper()
+myGuess = list(myGuess)
+print(myGuess)
+
+#if myGuess not in myList:
+#    print('Oops, not a valid entry.')
+#while myGuess not in myList:
+#    myGuess = input('Please choose rock, paper, or scissors: ')
+#    myGuess = myChoice.upper()
+#    if myGuess not in myList:
+#        print('Oops, not a valid entry.')
+        
 y = ['R','G','R','B']
 count = 0
 for i in range(4):
-    if x[i] == y[i]:
+    if Code[i] == y[i]:
         count = count + 1
-        x[i] = 'Z'
+        Code[i] = 'Z'
         y[i] = 'H'
-print(x)
+print(Code)
 print(y)
 print(count)
