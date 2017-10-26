@@ -13,6 +13,7 @@ while is_number(x) == True:
         y = input("Please input the number of miles traveled: ")
         if is_number(y) == True:
             print("Your gas milege is: ", float(y) / float(x))
+            input("Press any key to exit: ")
             break
         else:
             print("Oops! This is not a number.")

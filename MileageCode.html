@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <link href="screen.css" media="screen" rel="stylesheet" type="text/css" />
+    <title>Priscilla Short</title>
+  </head>
+  <body class="index">
+    <div id="main" role="main">
+      <h1>
+      Milleage Calculator
+	  </h1>
+	  <br>
+    <br>
+    <p>Python Milleage Calculator:</p>
+		<br>
+    <br>
+    <script src="https://pastebin.com/embed_js/TR4McsHC"></script>
+    <br>
+    <textarea rows="20" cols ="150">
+def is_number(s):
+    try:
+        float(s)
+        return True
+    except ValueError:
+        return False
+print("Hello, welcome to the gas milage calculator. For testing purposes, please try to input both numebrs and non numbers to see how the program reacts. Thank you!")
+x = input("Please input the number of galons of gas used: ")
+while is_number(x) == False:
+    print("Oops! This is not a number.")
+    x = input("Please input the number of galons of gas used: ")
+while is_number(x) == True:
+        y = input("Please input the number of miles traveled: ")
+        if is_number(y) == True:
+            print("Your gas milege is: ", float(y) / float(x))
+            input("Press any key to exit: ")
+            break
+        else:
+            print("Oops! This is not a number.")
+    </textarea>
+    <br>
+    <h2>
+			<a href="index.html">Home</a>
+		</h2>
+		<br>
+	  <br>
+    </div>
+  </body>
+</html>
