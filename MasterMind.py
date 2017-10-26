@@ -53,21 +53,58 @@ myGuess = myGuess.upper()
 myGuess = list(myGuess)
 print(myGuess)
 
+# Check for valid entry
 #if myGuess not in myList:
 #    print('Oops, not a valid entry.')
 #while myGuess not in myList:
 #    myGuess = input('Please choose rock, paper, or scissors: ')
 #    myGuess = myChoice.upper()
 #    if myGuess not in myList:
-#        print('Oops, not a valid entry.')
-        
-y = ['R','G','R','B']
+#        print('Oops, not a valid entry.')    
+
+# Compare - Look for exact matches
 count = 0
 for i in range(4):
-    if Code[i] == y[i]:
+    if Code[i] == myGuess[i]:
         count = count + 1
-        Code[i] = 'Z'
-        y[i] = 'H'
+        Code[i] = 'X'
+        myGuess[i] = 'Z'
 print(Code)
-print(y)
+print(myGuess)
 print(count)
+Result = 'C' * count
+print(Result)
+
+# Compare - Look for semi-matches
+count = 0
+for i in range(4):
+    if Code[i] in myGuess[0]:
+        count = count + 1
+        Code[i] = 'X'
+        myGuess[0] = 'Z'
+    if Code[i] in myGuess[1]:
+        count = count + 1
+        Code[i] = 'X'
+        myGuess[1] = 'Z'
+    if Code[i] in myGuess[2]:
+        count = count + 1
+        Code[i] = 'X'
+        myGuess[2] = 'Z'
+    if Code[i] in myGuess[3]:
+        count = count + 1
+        Code[i] = 'X'
+        myGuess[3] = 'Z'
+print(Code)
+print(myGuess)
+print(count)
+Result = Result + 'B' * count
+print(Result)
+Result = list(Result)
+
+def scrambled(orig):
+    dest = orig[:]
+    random.shuffle(dest)
+    return dest
+
+b = scrambled(Result)
+print(b)
