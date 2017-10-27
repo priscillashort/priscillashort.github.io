@@ -28,6 +28,14 @@
       <a href="RPSCode.html" >View Code</a>
     </p>
     <br>
+    <p>Master Mind:</p>
+    <p>
+      <a href="MasterMind.py" download="MasterMind.py">Run Code</a>
+    </p>
+    <p>
+      <a href="MasterMind.html" >View Code</a>
+    </p>
+    <br>
 		<p>
 			<a href="https://www.screencast.com/t/pHHivug1c">Waterloo Course Progress</a>
     </p>
@@ -45,40 +53,6 @@
 		</h2>
 		<br>
     <br>
-    <script src="https://pastebin.com/embed_js/xPQhD0M8"></script>
-    <br>
-    <iframe src="https://pastebin.com/embed_iframe/xPQhD0M8" style="border:none;width:100%"></iframe>
-    <textarea rows="30" cols ="150">
-    play = 'YES'
-    while play == 'YES':
-        #Computer's choice
-        myList = ['ROCK', 'PAPER', 'SCISSORS']
-        import random
-        compChoice = random.choice(myList)
-        #My choice
-        myChoice = input('Please choose rock, paper, or scissors: ')
-        myChoice = myChoice.upper()
-        if myChoice not in myList:
-            print('Oops, not a valid entry.')
-        while myChoice not in myList:
-            myChoice = input('Please choose rock, paper, or scissors: ')
-            myChoice = myChoice.upper()
-            if myChoice not in myList:
-                print('Oops, not a valid entry.')
-        #Test for tie
-        if compChoice == myChoice:
-            print("It's a tie.")
-        #Test if I won
-        if (myChoice == 'ROCK' and compChoice == 'SCISSORS') or (myChoice == 'PAPER' and compChoice == 'ROCK') or (myChoice == 'SCISSORS' and compChoice == 'PAPER'):
-            print('You won!')
-        #Test if computer won      
-        if (myChoice == 'ROCK' and compChoice == 'PAPER') or (myChoice == 'PAPER' and compChoice == 'SCISSORS') or (myChoice == 'SCISSORS' and compChoice == 'ROCK'):
-            print('You lost. Bummer.') 
-        #Play again?
-        play = input("Would you like to play again? Type 'yes' to play and any other key to exit: ")
-        play = play.upper()
-        
-    </textarea>
 		<br>
 		<br>
 	  <br>
