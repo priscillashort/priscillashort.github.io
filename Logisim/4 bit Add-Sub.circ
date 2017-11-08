@@ -252,174 +252,174 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <wire from="(490,360)" to="(490,420)"/>
     <wire from="(700,210)" to="(710,210)"/>
     <wire from="(610,400)" to="(620,400)"/>
-    <comp lib="1" loc="(850,580)" name="AND Gate">
+    <comp lib="1" loc="(760,230)" name="OR Gate">
       <a name="inputs" val="2"/>
+    </comp>
+    <comp lib="6" loc="(1294,553)" name="Text">
+      <a name="text" val="^"/>
     </comp>
     <comp lib="6" loc="(1322,246)" name="Text">
       <a name="text" val="1s"/>
-      <a name="font" val="Times New Roman bold 16"/>
-    </comp>
-    <comp lib="0" loc="(250,380)" name="Pin">
-      <a name="tristate" val="false"/>
-    </comp>
-    <comp lib="1" loc="(450,460)" name="XOR Gate">
-      <a name="inputs" val="2"/>
-    </comp>
-    <comp lib="1" loc="(940,550)" name="AND Gate">
-      <a name="inputs" val="2"/>
-    </comp>
-    <comp lib="1" loc="(850,290)" name="XOR Gate">
-      <a name="inputs" val="2"/>
-    </comp>
-    <comp lib="6" loc="(1323,315)" name="Text">
-      <a name="text" val="2s"/>
-      <a name="font" val="Times New Roman bold 16"/>
-    </comp>
-    <comp lib="0" loc="(210,380)" name="Pin">
-      <a name="tristate" val="false"/>
-    </comp>
-    <comp lib="1" loc="(850,510)" name="XOR Gate">
-      <a name="inputs" val="2"/>
-    </comp>
-    <comp lib="6" loc="(1323,458)" name="Text">
-      <a name="text" val="8s"/>
       <a name="font" val="Times New Roman bold 16"/>
     </comp>
     <comp lib="6" loc="(172,456)" name="Text">
       <a name="text" val="8s"/>
       <a name="font" val="Times New Roman bold 16"/>
     </comp>
-    <comp lib="1" loc="(450,390)" name="XOR Gate">
-      <a name="inputs" val="2"/>
-    </comp>
-    <comp lib="6" loc="(1296,569)" name="Text">
-      <a name="text" val="Overflow / Underflow"/>
-    </comp>
-    <comp lib="6" loc="(666,87)" name="Text">
-      <a name="text" val="4 Bit Adder modified for subtraction as well"/>
-      <a name="font" val="Times New Roman bold 16"/>
-    </comp>
-    <comp lib="6" loc="(1294,553)" name="Text">
-      <a name="text" val="^"/>
-    </comp>
-    <comp lib="1" loc="(1020,300)" name="OR Gate">
-      <a name="inputs" val="2"/>
-    </comp>
-    <comp lib="6" loc="(172,384)" name="Text">
-      <a name="text" val="4s"/>
-      <a name="font" val="Times New Roman bold 16"/>
-    </comp>
-    <comp lib="6" loc="(1323,386)" name="Text">
-      <a name="text" val="4s"/>
-      <a name="font" val="Times New Roman bold 16"/>
-    </comp>
-    <comp lib="1" loc="(450,250)" name="XOR Gate">
-      <a name="inputs" val="2"/>
-    </comp>
-    <comp lib="0" loc="(210,310)" name="Pin">
-      <a name="tristate" val="false"/>
-    </comp>
-    <comp lib="6" loc="(194,159)" name="Text">
-      <a name="text" val="A Input"/>
-    </comp>
-    <comp lib="1" loc="(590,510)" name="AND Gate">
-      <a name="inputs" val="2"/>
-    </comp>
-    <comp lib="1" loc="(680,260)" name="AND Gate">
-      <a name="inputs" val="2"/>
-    </comp>
-    <comp lib="0" loc="(250,240)" name="Pin">
-      <a name="tristate" val="false"/>
-    </comp>
-    <comp lib="1" loc="(590,290)" name="AND Gate">
-      <a name="inputs" val="2"/>
-    </comp>
-    <comp lib="1" loc="(950,270)" name="XOR Gate">
-      <a name="inputs" val="2"/>
-    </comp>
-    <comp lib="5" loc="(1280,240)" name="LED"/>
-    <comp lib="1" loc="(590,440)" name="XOR Gate">
-      <a name="inputs" val="2"/>
-    </comp>
-    <comp lib="1" loc="(950,490)" name="XOR Gate">
-      <a name="inputs" val="2"/>
-    </comp>
-    <comp lib="1" loc="(760,450)" name="OR Gate">
-      <a name="inputs" val="2"/>
-    </comp>
-    <comp lib="5" loc="(1280,310)" name="LED"/>
-    <comp lib="6" loc="(990,521)" name="Text"/>
-    <comp lib="1" loc="(680,480)" name="AND Gate">
-      <a name="inputs" val="2"/>
-    </comp>
-    <comp lib="6" loc="(189,507)" name="Text">
-      <a name="text" val="V"/>
-    </comp>
-    <comp lib="0" loc="(250,450)" name="Pin">
-      <a name="tristate" val="false"/>
-    </comp>
-    <comp lib="1" loc="(760,230)" name="OR Gate">
-      <a name="inputs" val="2"/>
-    </comp>
-    <comp lib="1" loc="(1190,540)" name="XOR Gate">
+    <comp lib="1" loc="(850,510)" name="XOR Gate">
       <a name="inputs" val="2"/>
     </comp>
     <comp lib="1" loc="(940,330)" name="AND Gate">
       <a name="inputs" val="2"/>
     </comp>
-    <comp lib="1" loc="(690,200)" name="XOR Gate">
+    <comp lib="1" loc="(950,490)" name="XOR Gate">
       <a name="inputs" val="2"/>
     </comp>
-    <comp lib="6" loc="(244,184)" name="Text">
-      <a name="text" val="V"/>
-    </comp>
-    <comp lib="1" loc="(850,360)" name="AND Gate">
+    <comp lib="1" loc="(590,290)" name="AND Gate">
       <a name="inputs" val="2"/>
     </comp>
+    <comp lib="1" loc="(680,480)" name="AND Gate">
+      <a name="inputs" val="2"/>
+    </comp>
+    <comp lib="1" loc="(260,530)" name="NOT Gate"/>
+    <comp lib="1" loc="(450,250)" name="XOR Gate">
+      <a name="inputs" val="2"/>
+    </comp>
+    <comp lib="1" loc="(450,460)" name="XOR Gate">
+      <a name="inputs" val="2"/>
+    </comp>
+    <comp lib="5" loc="(1280,310)" name="LED"/>
     <comp lib="1" loc="(450,320)" name="XOR Gate">
       <a name="inputs" val="2"/>
     </comp>
-    <comp lib="0" loc="(250,310)" name="Pin">
+    <comp lib="0" loc="(200,530)" name="Pin">
+      <a name="tristate" val="false"/>
+    </comp>
+    <comp lib="5" loc="(1280,380)" name="LED"/>
+    <comp lib="6" loc="(192,185)" name="Text">
+      <a name="text" val="V"/>
+    </comp>
+    <comp lib="1" loc="(450,390)" name="XOR Gate">
+      <a name="inputs" val="2"/>
+    </comp>
+    <comp lib="6" loc="(248,487)" name="Text">
+      <a name="text" val="1 for addition - 0 for subtraction"/>
+    </comp>
+    <comp lib="1" loc="(950,270)" name="XOR Gate">
+      <a name="inputs" val="2"/>
+    </comp>
+    <comp lib="6" loc="(1296,569)" name="Text">
+      <a name="text" val="Overflow / Underflow"/>
+    </comp>
+    <comp lib="0" loc="(250,450)" name="Pin">
+      <a name="tristate" val="false"/>
+    </comp>
+    <comp lib="1" loc="(690,420)" name="XOR Gate">
+      <a name="inputs" val="2"/>
+    </comp>
+    <comp lib="5" loc="(1280,520)" name="LED"/>
+    <comp lib="1" loc="(1190,540)" name="XOR Gate">
+      <a name="inputs" val="2"/>
+    </comp>
+    <comp lib="1" loc="(1020,520)" name="OR Gate">
+      <a name="inputs" val="2"/>
+    </comp>
+    <comp lib="6" loc="(189,507)" name="Text">
+      <a name="text" val="V"/>
+    </comp>
+    <comp lib="1" loc="(590,220)" name="XOR Gate">
+      <a name="inputs" val="2"/>
+    </comp>
+    <comp lib="1" loc="(850,580)" name="AND Gate">
+      <a name="inputs" val="2"/>
+    </comp>
+    <comp lib="1" loc="(850,290)" name="XOR Gate">
+      <a name="inputs" val="2"/>
+    </comp>
+    <comp lib="6" loc="(990,521)" name="Text"/>
+    <comp lib="6" loc="(1323,315)" name="Text">
+      <a name="text" val="2s"/>
+      <a name="font" val="Times New Roman bold 16"/>
+    </comp>
+    <comp lib="1" loc="(590,440)" name="XOR Gate">
+      <a name="inputs" val="2"/>
+    </comp>
+    <comp lib="0" loc="(250,240)" name="Pin">
       <a name="tristate" val="false"/>
     </comp>
     <comp lib="6" loc="(172,313)" name="Text">
       <a name="text" val="2s"/>
       <a name="font" val="Times New Roman bold 16"/>
     </comp>
+    <comp lib="1" loc="(850,360)" name="AND Gate">
+      <a name="inputs" val="2"/>
+    </comp>
+    <comp lib="1" loc="(940,550)" name="AND Gate">
+      <a name="inputs" val="2"/>
+    </comp>
+    <comp lib="0" loc="(210,380)" name="Pin">
+      <a name="tristate" val="false"/>
+    </comp>
     <comp lib="0" loc="(210,240)" name="Pin">
       <a name="tristate" val="false"/>
     </comp>
-    <comp lib="5" loc="(1280,520)" name="LED"/>
-    <comp lib="1" loc="(590,220)" name="XOR Gate">
+    <comp lib="6" loc="(194,159)" name="Text">
+      <a name="text" val="A Input"/>
+    </comp>
+    <comp lib="1" loc="(680,260)" name="AND Gate">
+      <a name="inputs" val="2"/>
+    </comp>
+    <comp lib="1" loc="(1020,300)" name="OR Gate">
+      <a name="inputs" val="2"/>
+    </comp>
+    <comp lib="6" loc="(1323,386)" name="Text">
+      <a name="text" val="4s"/>
+      <a name="font" val="Times New Roman bold 16"/>
+    </comp>
+    <comp lib="1" loc="(690,200)" name="XOR Gate">
       <a name="inputs" val="2"/>
     </comp>
     <comp lib="0" loc="(210,450)" name="Pin">
       <a name="tristate" val="false"/>
     </comp>
-    <comp lib="6" loc="(248,487)" name="Text">
-      <a name="text" val="1 for addition - 0 for subtraction"/>
-    </comp>
-    <comp lib="1" loc="(1020,520)" name="OR Gate">
-      <a name="inputs" val="2"/>
+    <comp lib="5" loc="(1280,240)" name="LED"/>
+    <comp lib="0" loc="(250,310)" name="Pin">
+      <a name="tristate" val="false"/>
     </comp>
     <comp lib="6" loc="(246,159)" name="Text">
       <a name="text" val="B Input"/>
     </comp>
-    <comp lib="1" loc="(260,530)" name="NOT Gate"/>
-    <comp lib="5" loc="(1280,380)" name="LED"/>
+    <comp lib="0" loc="(250,380)" name="Pin">
+      <a name="tristate" val="false"/>
+    </comp>
+    <comp lib="6" loc="(244,184)" name="Text">
+      <a name="text" val="V"/>
+    </comp>
+    <comp lib="6" loc="(172,384)" name="Text">
+      <a name="text" val="4s"/>
+      <a name="font" val="Times New Roman bold 16"/>
+    </comp>
     <comp lib="6" loc="(171,244)" name="Text">
       <a name="text" val="1s"/>
       <a name="font" val="Times New Roman bold 16"/>
     </comp>
-    <comp lib="6" loc="(192,185)" name="Text">
-      <a name="text" val="V"/>
-    </comp>
-    <comp lib="5" loc="(1280,450)" name="LED"/>
-    <comp lib="0" loc="(200,530)" name="Pin">
-      <a name="tristate" val="false"/>
-    </comp>
-    <comp lib="1" loc="(690,420)" name="XOR Gate">
+    <comp lib="1" loc="(590,510)" name="AND Gate">
       <a name="inputs" val="2"/>
     </comp>
+    <comp lib="6" loc="(1323,458)" name="Text">
+      <a name="text" val="8s"/>
+      <a name="font" val="Times New Roman bold 16"/>
+    </comp>
+    <comp lib="1" loc="(760,450)" name="OR Gate">
+      <a name="inputs" val="2"/>
+    </comp>
+    <comp lib="0" loc="(210,310)" name="Pin">
+      <a name="tristate" val="false"/>
+    </comp>
+    <comp lib="6" loc="(666,87)" name="Text">
+      <a name="text" val="4 Bit Adder modified for subtraction as well"/>
+      <a name="font" val="Times New Roman bold 16"/>
+    </comp>
+    <comp lib="5" loc="(1280,450)" name="LED"/>
   </circuit>
 </project>
