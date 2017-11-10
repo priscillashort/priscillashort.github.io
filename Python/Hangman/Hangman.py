@@ -1,19 +1,13 @@
-"""
-   Hangman
-     Plays a basic game of hangman
-    
-   Author:  JJ Programmer
-   Version: 0.01
-   Date:    11/07/2017
-"""
+#Hangman game: completed by Priscilla Short on 11.10.17
 
+#Functions:
 import random
 
 def makeArt():
     art = []
-    art.append('         +---------+') #0
-    art.append('         |         |') #1
-    art.append('                   |') #etc
+    art.append('         +---------+') 
+    art.append('         |         |')
+    art.append('                   |')
     art.append('                   |')
     art.append('                   |')
     art.append('                   |')
@@ -28,11 +22,10 @@ def readWords():
         for line in wordFile:
             if len(line) > 4 and len(line) < 7:
                 wordList.append(line[0:-1])
-            
     return wordList
 
 def printArt(art):
-    for line in art: #line is a var
+    for line in art:
         print(line)
 
 def setParts():
@@ -43,6 +36,8 @@ def setParts():
         4 : rightArm,
         5 : leftLeg,
         6 : rightLeg,
+        7 : leftFoot,
+        8 : rightFoot,
         }
     return parts
 
@@ -83,129 +78,92 @@ def rightLeg(art):
     art[13] = '      +     +      |';
     art[14] = '     +       +     |';
 
+
+def leftFoot(art):
+    art[11] = '       +   +       |';
+    art[12] = '      +     +      |';
+    art[13] = '      +     +      |';
+    art[14] = '   --+       +     |';
+
+def rightFoot(art):
+    art[11] = '       +   +       |';
+    art[12] = '      +     +      |';
+    art[13] = '      +     +      |';
+    art[14] = '   --+       +--   |';
+
 def init():
     bodyParts = setParts()
     art = makeArt()
     words = readWords()
     return bodyParts, art, words
 
-count = 0
-
-def main():
-    bodyParts, art, words = init()
-    
-    printArt(art)
-
-    if count == 1:
-        misses = 1
-        bodyParts[misses](art)
-        printArt(art)
-
-    '''
-    misses = 2
-    bodyParts[misses](art)
-
-    misses = 3
-    bodyParts[misses](art)
-
-    misses = 4
-    bodyParts[misses](art)
-
-    misses = 5
-    bodyParts[misses](art)
-
-    misses = 6
-    bodyParts[misses](art)
-    '''
-    
-    printArt(art);
-
-    myWord = random.choice(words)
-
-    '''
-    for i in range(20):
-        print(random.choice(words))
-        '''
-
-main()
-
-'''
-s = 'apple'
-letters = list(s)
-print(letters)
-
-letters = ','.join(letters)
-print(letters)
-
-w = 'cat dog fish'
-w = w.split(' ')
-print(w)
-'''
-
-'''
-pic = [1,2,3,4]
-pic[0] = '============='
-pic[1] = '=           ='
-pic[2] = '=           ='
-pic[3] = '============='
-'''
-
-#foo = [5,6,7,8,9,0]
-'''
-def printPic(p): #Assumes p is a list
-    for line in p:
-        print(line)
-'''
-'''
-printPic(pic)
-pic[2] = '=***********='
-printPic(pic)
-#printPic(foo)
-'''
-
-
 def insertletter (spaces, letter, pos):
-    #_ _ _ _ ...
-    #0123456 ...
-    #pos * 2 is the location in spaces
     pos = pos * 2
     spaces = spaces[0:pos] + letter + spaces[pos+1:]
     return spaces
 
-word = random.choice(readWords())
-#word = 'donut'
-print(word)
-spaces = '_ ' * len(word)
-
-
-for i in range(len(word)):
-    guess = input('letter? ')
-    if guess in word:
-        pos = word.index(guess)
-        spaces = insertletter(spaces, guess, pos)
-    else:
-        count = count + 1
-
-    #pic[4] = spaces
-    #printPic(pic)
-    
+#Play again loop
+print('Welcome to the Hangman game! Try using invalid entries to test the error handling. You have 8 misses and then you are dead.')
+play = 'YES'
+while play == 'YES': 
+    #Initialisation:
+    print()
+    print()
+    alphabet = ['A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z']
+    guessed = []
+    count = 0
+    word = random.choice(readWords())
+    word = word.upper()
+    word = list(word)
+    saveWord = list(word)
+    saveWord = ''.join(saveWord)
+    spaces = '_ ' * len(word)
+    bodyParts, art, words = init()
+    printArt(art)
     print(spaces)
-    
-"""
-spaces = '_ ' * len(word)
-print(spaces)
-
-spaces = insertletter(spaces, 'o', 1)
-print(spaces)
-
-spaces = insertletter(spaces, 't', 4)
-print(spaces)
-
-letters = list(word)
-print(letters)
-"""
-
-
-
-
+    print()
+    win = '?' * len(word)
+    win = list(win)
+    misses = 0
+    #Main game loop
+    while word != win and misses != 8:
+        guess = input('Enter a letter: ').upper()
+        print()
+        #Test for valid input
+        while guess not in alphabet or guess in guessed:
+            while guess not in alphabet:
+                print('Oops, that is not a letter.')
+                guess = input('Enter a letter: ').upper()
+                print()
+            while guess in guessed:
+                print('Oops, you have already guessed that letter.')
+                guess = input('Enter a letter: ').upper()
+                print()
+        #Check if the letter is NOT in the word
+        if guess not in word:
+            count = count + 1
+            misses = count
+            bodyParts[misses](art)
+            printArt(art)
+        #Check if the letter is in the word and what position
+        for i in range(len(word)):
+            if word[i] == guess:
+                pos = word.index(guess)
+                spaces = insertletter(spaces, guess, pos)
+                word[i] = '?'
+        #modify letters guessed list and display outputs
+        guessed.append(guess)
+        print('Letters already guessed: ', guessed)
+        print(spaces)
+        print()
+        #Check if the user won
+        if word == win:
+            print('You won!')
+            play = input("Would you like to play again? Type 'yes' to play and any other key to exit: ").upper()
+        #Check if the user lost
+        if misses == 8:
+            print('You lost.')
+            print('The word was: ', saveWord)
+            play = input("Would you like to play again? Type 'yes' to play and any other key to exit: ").upper()
+            
 
