@@ -94,7 +94,7 @@ def main():
     
     printArt(art)
     
-    if misses = 1:
+    misses = 1
     bodyParts[misses](art)
     
     misses = 2
@@ -118,3 +118,79 @@ def main():
         print(random.choice(words))
 
 main()
+
+'''
+s = 'apple'
+letters = list(s)
+print(letters)
+
+letters = ','.join(letters)
+print(letters)
+
+w = 'cat dog fish'
+w = w.split(' ')
+print(w)
+'''
+
+pic = [1,2,3,4]
+pic[0] = '============='
+pic[1] = '=           ='
+pic[2] = '=           ='
+pic[3] = '============='
+
+#foo = [5,6,7,8,9,0]
+
+def printPic(p): #Assumes p is a list
+    for line in p:
+        print(line)
+
+printPic(pic)
+pic[2] = '=***********='
+printPic(pic)
+#printPic(foo)
+
+
+def insertletter (spaces, letter, pos):
+    #_ _ _ _ ...
+    #0123456 ...
+    #pos * 2 is the location in spaces
+    pos = pos * 2
+    spaces = spaces[0:pos] + letter + spaces[pos+1:]
+    return spaces
+
+
+
+word = 'donut'
+spaces = '_ ' * len(word)
+
+for i in range(len(word)):
+    guess = input('letter? ')
+    if guess in word:
+        pos = word.index(guess)
+        spaces = insertletter(spaces, guess, pos)
+    else:
+        print('nope')
+
+    #pic[4] = spaces
+    #printPic(pic)
+    
+    print(spaces)
+    
+"""
+spaces = '_ ' * len(word)
+print(spaces)
+
+spaces = insertletter(spaces, 'o', 1)
+print(spaces)
+
+spaces = insertletter(spaces, 't', 4)
+print(spaces)
+
+letters = list(word)
+print(letters)
+"""
+
+
+
+
+
