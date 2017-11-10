@@ -11,9 +11,9 @@ import random
 
 def makeArt():
     art = []
-    art.append('         +---------+') #0
-    art.append('         |         |') #1
-    art.append('                   |') #etc
+    art.append('         +---------+') 
+    art.append('         |         |')
+    art.append('                   |')
     art.append('                   |')
     art.append('                   |')
     art.append('                   |')
@@ -28,11 +28,10 @@ def readWords():
         for line in wordFile:
             if len(line) > 4 and len(line) < 7:
                 wordList.append(line[0:-1])
-            
     return wordList
 
 def printArt(art):
-    for line in art: #line is a var
+    for line in art:
         print(line)
 
 def setParts():
@@ -89,123 +88,33 @@ def init():
     words = readWords()
     return bodyParts, art, words
 
-count = 0
-
-def main():
-    bodyParts, art, words = init()
-    
-    printArt(art)
-
-    if count == 1:
-        misses = 1
-        bodyParts[misses](art)
-        printArt(art)
-
-    '''
-    misses = 2
-    bodyParts[misses](art)
-
-    misses = 3
-    bodyParts[misses](art)
-
-    misses = 4
-    bodyParts[misses](art)
-
-    misses = 5
-    bodyParts[misses](art)
-
-    misses = 6
-    bodyParts[misses](art)
-    '''
-    
-    printArt(art);
-
-    myWord = random.choice(words)
-
-    '''
-    for i in range(20):
-        print(random.choice(words))
-        '''
-
-main()
-
-'''
-s = 'apple'
-letters = list(s)
-print(letters)
-
-letters = ','.join(letters)
-print(letters)
-
-w = 'cat dog fish'
-w = w.split(' ')
-print(w)
-'''
-
-'''
-pic = [1,2,3,4]
-pic[0] = '============='
-pic[1] = '=           ='
-pic[2] = '=           ='
-pic[3] = '============='
-'''
-
-#foo = [5,6,7,8,9,0]
-'''
-def printPic(p): #Assumes p is a list
-    for line in p:
-        print(line)
-'''
-'''
-printPic(pic)
-pic[2] = '=***********='
-printPic(pic)
-#printPic(foo)
-'''
-
-
 def insertletter (spaces, letter, pos):
-    #_ _ _ _ ...
-    #0123456 ...
-    #pos * 2 is the location in spaces
     pos = pos * 2
     spaces = spaces[0:pos] + letter + spaces[pos+1:]
     return spaces
 
-word = random.choice(readWords())
-#word = 'donut'
+count = 0
+count2 = 0
+#word = random.choice(readWords())
+word = 'neno'
 print(word)
 spaces = '_ ' * len(word)
-
-
-for i in range(len(word)):
+bodyParts, art, words = init()
+printArt(art)
+for i in range(6):
     guess = input('letter? ')
-    if guess in word:
-        pos = word.index(guess)
-        spaces = insertletter(spaces, guess, pos)
-    else:
+    for i in range(len(word)):
+        if guess == word[i]:
+            pos = word.index(guess)
+            print(word[i])
+            #word[i] = '.'
+            count2 = count2 + 1
+            spaces = insertletter(spaces, guess, pos)
+    #print(count2)
+    if guess not in word:
         count = count + 1
-
-    #pic[4] = spaces
-    #printPic(pic)
-    
+        misses = count
+        bodyParts[misses](art)
+        printArt(art)
+    #print(count)
     print(spaces)
-    
-"""
-spaces = '_ ' * len(word)
-print(spaces)
-
-spaces = insertletter(spaces, 'o', 1)
-print(spaces)
-
-spaces = insertletter(spaces, 't', 4)
-print(spaces)
-
-letters = list(word)
-print(letters)
-"""
-
-
-
-
-
