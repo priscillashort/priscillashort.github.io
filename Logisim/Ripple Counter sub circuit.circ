@@ -156,57 +156,44 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <wire from="(530,400)" to="(540,400)"/>
     <wire from="(630,380)" to="(640,380)"/>
     <wire from="(610,400)" to="(620,400)"/>
-    <comp lib="0" loc="(660,250)" name="Pin">
-      <a name="facing" val="south"/>
-      <a name="output" val="true"/>
-      <a name="label" val="out2"/>
-      <a name="labelloc" val="east"/>
-    </comp>
     <comp lib="4" loc="(840,360)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(440,360)" name="D Flip-Flop"/>
-    <comp lib="0" loc="(820,250)" name="Pin">
-      <a name="facing" val="south"/>
-      <a name="output" val="true"/>
-      <a name="label" val="out0"/>
-      <a name="labelloc" val="east"/>
+    <comp lib="4" loc="(760,360)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(600,360)" name="D Flip-Flop"/>
+    <comp lib="0" loc="(180,360)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="label" val="Clk"/>
     </comp>
     <comp lib="4" loc="(680,360)" name="D Flip-Flop"/>
-    <comp lib="0" loc="(250,250)" name="Pin">
-      <a name="facing" val="south"/>
-      <a name="output" val="true"/>
-      <a name="label" val="out7"/>
-      <a name="labelloc" val="east"/>
-    </comp>
-    <comp lib="4" loc="(280,360)" name="D Flip-Flop"/>
-    <comp lib="6" loc="(536,184)" name="Text">
-      <a name="text" val="8 Bit Ripple Counter"/>
-    </comp>
-    <comp lib="4" loc="(360,360)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(600,360)" name="D Flip-Flop"/>
-    <comp lib="0" loc="(580,250)" name="Pin">
-      <a name="facing" val="south"/>
-      <a name="output" val="true"/>
-      <a name="label" val="out3"/>
-      <a name="labelloc" val="east"/>
-    </comp>
-    <comp lib="0" loc="(420,250)" name="Pin">
-      <a name="facing" val="south"/>
-      <a name="output" val="true"/>
-      <a name="label" val="out5"/>
-      <a name="labelloc" val="east"/>
-    </comp>
-    <comp lib="4" loc="(760,360)" name="D Flip-Flop"/>
-    <comp lib="0" loc="(180,360)" name="Clock"/>
     <comp lib="0" loc="(740,250)" name="Pin">
       <a name="facing" val="south"/>
       <a name="output" val="true"/>
       <a name="label" val="out1"/>
       <a name="labelloc" val="east"/>
     </comp>
+    <comp lib="4" loc="(440,360)" name="D Flip-Flop"/>
+    <comp lib="0" loc="(660,250)" name="Pin">
+      <a name="facing" val="south"/>
+      <a name="output" val="true"/>
+      <a name="label" val="out2"/>
+      <a name="labelloc" val="east"/>
+    </comp>
     <comp lib="0" loc="(500,250)" name="Pin">
       <a name="facing" val="south"/>
       <a name="output" val="true"/>
       <a name="label" val="out4"/>
+      <a name="labelloc" val="east"/>
+    </comp>
+    <comp lib="4" loc="(360,360)" name="D Flip-Flop"/>
+    <comp lib="0" loc="(420,250)" name="Pin">
+      <a name="facing" val="south"/>
+      <a name="output" val="true"/>
+      <a name="label" val="out5"/>
+      <a name="labelloc" val="east"/>
+    </comp>
+    <comp lib="0" loc="(580,250)" name="Pin">
+      <a name="facing" val="south"/>
+      <a name="output" val="true"/>
+      <a name="label" val="out3"/>
       <a name="labelloc" val="east"/>
     </comp>
     <comp lib="0" loc="(340,250)" name="Pin">
@@ -216,5 +203,21 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="labelloc" val="east"/>
     </comp>
     <comp lib="4" loc="(520,360)" name="D Flip-Flop"/>
+    <comp lib="6" loc="(536,184)" name="Text">
+      <a name="text" val="8 Bit Ripple Counter"/>
+    </comp>
+    <comp lib="0" loc="(820,250)" name="Pin">
+      <a name="facing" val="south"/>
+      <a name="output" val="true"/>
+      <a name="label" val="out0"/>
+      <a name="labelloc" val="east"/>
+    </comp>
+    <comp lib="0" loc="(250,250)" name="Pin">
+      <a name="facing" val="south"/>
+      <a name="output" val="true"/>
+      <a name="label" val="out7"/>
+      <a name="labelloc" val="east"/>
+    </comp>
+    <comp lib="4" loc="(280,360)" name="D Flip-Flop"/>
   </circuit>
 </project>
