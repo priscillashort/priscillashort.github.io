@@ -8,7 +8,13 @@ function setup() {
   createCanvas(1000,800);
   background(60,10,0);
   input1 = createInput();
-  input1.position(415, 520);
+  input1.position(430, 520);
+  input2 = createInput();
+  input2.position(430, 570);
+  input3 = createInput();
+  input3.position(430, 620);
+  input4 = createInput();
+  input4.position(430, 670);
   //input2 = createInput();
   //input2.position(415, 543);
   //input3 = createInput();
@@ -20,11 +26,16 @@ function draw() {
   for (let x = 200; x < 300; x += 10){
   fill(x + 30, x + 5, x + 10);
   rect(x, x, x, 300);}
+  fill(255);
+  rect(290, 460, 400, 240);
   stroke(0);
   fill(0);
   strokeWeight(1);
   //text("Enter a color ID (0-255)", 375, 490);
   text("Enter a name for your owl:", 375, 490);
+  text("Enter a color for its face (black, grey, or white):", 320, 540);
+  text("Enter a color for its body (green, red, or blue):", 320, 590);
+  text("Enter a color for its eyes and nose (orange, purple, or turquoise):", 320, 640);
   //text("Enter a color ID (0-255) for each color range.", 320, 490);
   //text("Red", 315, 520);
   //text("Blue", 315, 543);
@@ -43,25 +54,46 @@ function draw() {
     push();
     translate(x,y);
     stroke(204,102,0);
+    var color2 = input3.value();
+    if(color2 == "green"){
+      stroke(0,102,0);
+     }
+     if(color2 == "red"){
+      stroke(204,0,0);
+     }
+     if(color2 == "blue"){
+      stroke(0,0,255);
+     }
     strokeWeight(70);
     line(0,-35,0,-65);
-    //noStroke();
     strokeWeight(2);
-
-
     //var name = input1.value();
     var name = 204;
-    //fill(name);
-    //if(mouseIsPressed){
-      fill(name);//}
-    //} else {
-     // fill(name);}
- 
-    
+    fill(name);
+    var color = input2.value();
+     if(color == "black"){
+      fill(0);
+     }
+     if(color == "white"){
+      fill(255);
+     }
+     if(color == "grey"){
+      fill(180);
+     }
     ellipse(-17.5,-65,35,35);
     ellipse(17.5,-65,35,35);
     arc(0,-65,70,70,0,PI);
     fill(0);
+    var color3 = input4.value();
+    if(color3 == "orange"){
+     fill(204,102,0);
+    }
+    if(color3 == "purple"){
+     fill(100,0,150);
+    }
+    if(color3 == "turquoise"){
+     fill(0,150,150);
+    }
     ellipse(-14,-65,8,8);
     ellipse(14,-65,8,8);
     quad(0,-58,4,-51,0,-44,-4,-51);
