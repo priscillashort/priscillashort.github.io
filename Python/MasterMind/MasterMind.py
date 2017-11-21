@@ -1,4 +1,5 @@
 print('Welcome to the Master Mind game! Try using invalid entries to test the error handling')
+print('Please note that C means an exact match in the exact location and B means a match but not in the correct spot.')
 play = 'YES'
 while play == 'YES':
     #Generate Rondom Code
@@ -21,21 +22,22 @@ while play == 'YES':
         myGuess = input('Please choose a 4 digit combination of R(Red), G(Green), B(Blue), and W(White): ')
         myGuess = myGuess.upper()
         myGuess = list(myGuess)
-
+        
         # Check for valid entry
-        while len(myGuess) != len(Code) or myGuess[0] not in ClrOptions or myGuess[1] not in ClrOptions or myGuess[2] not in ClrOptions or myGuess[3] not in ClrOptions:
-            while len(myGuess) != len(Code):
-                if len(myGuess) != len(Code):
-                    print('Oops, not a valid entry. This entry is either too short or too long. 4 digits please.')
-                myGuess = input('Please choose a 4 digit combination of R(Red), G(Green), B(Blue), and W(White): ')
-                myGuess = myGuess.upper()
-                myGuess = list(myGuess)
-            while myGuess[0] not in ClrOptions or myGuess[1] not in ClrOptions or myGuess[2] not in ClrOptions or myGuess[3] not in ClrOptions:
-                if myGuess[0] not in ClrOptions or myGuess[1] not in ClrOptions or myGuess[2] not in ClrOptions or myGuess[3] not in ClrOptions:
-                    print('Oops, not a valid entry. Please only use the letters R, G, B, W.')
-                myGuess = input('Please choose a 4 digit combination of R(Red), G(Green), B(Blue), and W(White): ')
-                myGuess = myGuess.upper()
-                myGuess = list(myGuess)
+        def ValidEntry(a, b, c): #a=len(myGuess) b=myGuess c=ClrOptions 
+            counter1 = 0
+            for i in range(a):
+                if b[i] not in c:
+                    counter1 = counter1 + 1
+            if a != 4:
+                counter1 = counter1 + 1
+            if counter1 > 0:
+                return False
+        while ValidEntry(len(myGuess), myGuess, ClrOptions) == False:
+            print('Oops, not a valid entry. This entry is either the wrong length or uses invalid letters.')
+            myGuess = input('Please choose a 4 digit combination of R(Red), G(Green), B(Blue), and W(White): ')
+            myGuess = myGuess.upper()
+            myGuess = list(myGuess)
 
         # Compare - Look for exact matches
         count = 0

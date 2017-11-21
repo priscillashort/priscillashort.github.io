@@ -4,7 +4,7 @@ def is_number(s):
         return True
     except ValueError:
         return False
-print("Hello, welcome to the gas milage calculator. For testing purposes, please try to input both numebrs and non numbers to see how the program reacts. Thank you!")
+print("Hello, welcome to the gas milage calculator. For testing purposes, please try to input both numbers and non numbers to see how the program reacts. Thank you!")
 x = input("Please input the number of galons of gas used: ")
 while is_number(x) == False:
     print("Oops! This is not a number.")
@@ -12,7 +12,7 @@ while is_number(x) == False:
 while is_number(x) == True:
         y = input("Please input the number of miles traveled: ")
         if is_number(y) == True:
-            print("Your gas milege is: ", float(y) / float(x))
+            print("Your gas milege is: ", float(y) / float(x), 'miles per gallon.')
             input("Press any key to exit: ")
             break
         else:
