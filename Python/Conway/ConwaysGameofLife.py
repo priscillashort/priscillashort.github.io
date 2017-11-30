@@ -1,4 +1,6 @@
-
+# Conway's Game of Life
+# Written by Priscilla Short on 11-22-17
+print('Please input 5 x and y coordinates to points on a graph to start the game:')
 populatedCells = []
 for i in range(5):
     x = int(input('x: '))
@@ -6,9 +8,8 @@ for i in range(5):
     cell = [x, y]
     populatedCells.append(cell)
 print('Originally popuplated cells:', populatedCells)
-play = input('enter STEP to trigger the next tick: ')
+play = input("Enter the word 'STEP' to trigger the rules and cause the points to change: ")
 play = play.upper()
-
 while play == 'STEP':
     remove = []
     emptyCells = []
@@ -23,16 +24,6 @@ while play == 'STEP':
         cellf = [populatedCells[j][0] - 1, populatedCells[j][1] - 1]
         cellg = [populatedCells[j][0], populatedCells[j][1] - 1]
         cellh = [populatedCells[j][0] + 1, populatedCells[j][1] - 1]
-        '''
-        print(cella)
-        print(cellb)
-        print(cellc)
-        print(celld)
-        print(celle)
-        print(cellf)
-        print(cellg)
-        print(cellh)
-        '''
         if cella in populatedCells:
             count = count + 1
         else:
@@ -90,16 +81,6 @@ while play == 'STEP':
         cellf = [emptyCells[l][0] - 1, emptyCells[l][1] - 1]
         cellg = [emptyCells[l][0], emptyCells[l][1] - 1]
         cellh = [emptyCells[l][0] + 1, emptyCells[l][1] - 1]
-        '''
-        print(cella)
-        print(cellb)
-        print(cellc)
-        print(celld)
-        print(celle)
-        print(cellf)
-        print(cellg)
-        print(cellh)
-        '''
         if cella in populatedCells:
             count = count + 1
         else:
@@ -144,7 +125,6 @@ while play == 'STEP':
             if origCell not in AddedCells:
                 AddedCells.append(origCell)
 
-
     populatedCellsCopy = []
     for k in range(len(populatedCells)):
         if populatedCells[k] not in remove:
@@ -153,8 +133,6 @@ while play == 'STEP':
     for m in range(len(AddedCells)):
         populatedCells.append(AddedCells[m])
 
-    #print('removed:', remove)
-    print('still populated:', populatedCells)
-    #print('empty cells:', emptyCells)
-    play = input('enter STEP to trigger the next tick: ')
+    print('Cells curently populated:', populatedCells)
+    play = input("Enter the word 'STEP' to trigger the rules and cause the points to change: ")
     play = play.upper()
