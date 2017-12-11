@@ -73,16 +73,20 @@ def tentox(add, num1, num2):
     return 0
 
 def testvalues():
-    functions = [tentox, twotox, AandB]
-    direction = input('Please input a direction. ONLY R or L: ')
-    direction = direction.upper()
-    values = [50, 100, 150, 200, 250, 300, 350, 400, 450, 500, 550, 600, 650, 700, 750, 800, 850, 900, 950, 1000]
-    for j in values:
-        print('Total distance traveled when energy is', j, 'meters away:')
-        alg = 1
-        for i in functions:
-            print('Algorithm', alg, '=', movement(j, direction, i))
-            alg = alg + 1
+    play = 'YES'
+    while play == 'YES':
+        functions = [tentox, twotox, AandB]
+        direction = input('Please input a direction. ONLY R or L: ')
+        direction = direction.upper()
+        values = [50, 100, 150, 200, 250, 300, 350, 400, 450, 500, 550, 600, 650, 700, 750, 800, 850, 900, 950, 1000]
+        for j in values:
+            print('Total distance traveled when energy is', j, 'meters away:')
+            alg = 1
+            for i in functions:
+                print('Algorithm', alg, '=', movement(j, direction, i))
+                alg = alg + 1
+        play = input("Would you like to run the program again? Type 'yes' to play and enter any other key to exit: ")
+        play = play.upper()
 
 testvalues()
 

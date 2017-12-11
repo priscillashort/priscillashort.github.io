@@ -48,48 +48,52 @@ def convertBaseToNewBase(num, curentBase, newBase):
 
 # A short piece of code to test the functions using inputs and error handling
 def testAllFunctions():
-    result1 = False
-    result2 = False
-    result3 = False
-    while result1 == False:
-        oldBase = input('Please enter the base you are converting from, using an integer: ')
-        if oldBase.isdigit() == True:
-            if int(oldBase) > 36 or int(oldBase) < 2:
-                print('You have entered an invalid base. Please limit your base from 2 to 36')
+    play = 'YES'
+    while play == 'YES':
+        result1 = False
+        result2 = False
+        result3 = False
+        while result1 == False:
+            oldBase = input('Please enter the base you are converting from, using an integer: ')
+            if oldBase.isdigit() == True:
+                if int(oldBase) > 36 or int(oldBase) < 2:
+                    print('You have entered an invalid base. Please limit your base from 2 to 36')
+                else:
+                    result1 = True
             else:
-                result1 = True
-        else:
-            print('You have not entered an integer for your base.')
-            
-    while result2 == False:
-        newBase = input('Please enter the base you would like your number converted to, using an integer: ')
-        if newBase.isdigit() == True:
-            if int(newBase) > 36 or int(newBase) < 2:
-                print('You have entered an invalid base. Please limit your base from 2 to 36')
-            else:
-                result2 = True
-        else:
-            print('You have not entered an integer for your base.')
-            
-    while result3 == False:
-        num = input('Please enter a value to convert: ')
-        count0 = 0
-        for i in num:
-            if i.isdigit() == False and i.isalpha() == False:
-                count0 = count0 + 1
-
-        count = 0
-        for i in num:
-            if convertSymToInt(i) >= int(oldBase):
-                count = count + 1
+                print('You have not entered an integer for your base.')
                 
-        if count > 0 or count0 > 0:
-            print('Some of the characters in your number represent values higher than the base you are converting from. This is not a valid number.')
-        
-        if count == 0 and count0 == 0:
-            result3 = True
+        while result2 == False:
+            newBase = input('Please enter the base you would like your number converted to, using an integer: ')
+            if newBase.isdigit() == True:
+                if int(newBase) > 36 or int(newBase) < 2:
+                    print('You have entered an invalid base. Please limit your base from 2 to 36')
+                else:
+                    result2 = True
+            else:
+                print('You have not entered an integer for your base.')
+                
+        while result3 == False:
+            num = input('Please enter a value to convert: ')
+            count0 = 0
+            for i in num:
+                if i.isdigit() == False and i.isalpha() == False:
+                    count0 = count0 + 1
 
-    print(num, 'converted from base', oldBase, 'to base', newBase, 'is', convertBaseToNewBase(num, oldBase, newBase))
+            count = 0
+            for i in num:
+                if convertSymToInt(i) >= int(oldBase):
+                    count = count + 1
+                    
+            if count > 0 or count0 > 0:
+                print('Some of the characters in your number represent values higher than the base you are converting from. This is not a valid number.')
+            
+            if count == 0 and count0 == 0:
+                result3 = True
+
+        print(num, 'converted from base', oldBase, 'to base', newBase, 'is', convertBaseToNewBase(num, oldBase, newBase))
+        play = input("Would you like to change another base? Type 'yes' to play and enter any other key to exit: ")
+        play = play.upper()
 
 
 testAllFunctions()
