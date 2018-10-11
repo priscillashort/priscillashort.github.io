@@ -23,28 +23,23 @@ time, mark, audio, video {
   color: #1D0E0E;
   text-align: center;
   font-family: CGF Locust Resistance;
-  background:url("testimage.gif"); 
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
+  background-image: url("testimage.gif");
   background-color: #cccccc;  
   line-height: 2; }
   
 header,
 h1 {
-  background-image: radial-gradient(rgb(0, 0, 0), rgb(4, 34, 31), rgb(7, 59, 54));
-  background-size: 800px;
-  border: 10px groove black;
-  border-image-width: 800px groove black;
-  width:100%;        
-  margin-left:auto;
-  margin-right:auto;
-  -webkit-text-stroke: 1.5px rgb(7, 29, 39);
-  background-position:center;
-  background-repeat:no-repeat;
   text-align: center;
   font-family: Brush Script MT;
   font-size: 5em;
-  color: rgb(147, 164, 180);}
+  color: DodgerBlue;
+  -webkit-text-stroke: 1.5px #000;
+  background-image: url("GradientBackground.gif");
+  width:100%;        
+  margin-left:auto;
+  margin-right:auto;
+  background-position:center;
+  background-repeat:no-repeat; }
 
 p {
   background-image: -webkit-gradient(linear, left top, left bottom, 
@@ -99,16 +94,15 @@ q, blockquote {
     content: none; }
 
 a img {
-  /*border-radius: 50%;*/
   border: none; }
 
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
   display: block; }
 
 a {
-  color: rgb(9, 52, 61); }
+  color: #0E5464; }
   a:hover {
-    color: rgb(80, 148, 142); }
+    color: #63C1E6; }
 
 #main {
   padding: 50px; }
