@@ -101,6 +101,8 @@ h2 {
   background-size: 1500px;
   margin-left: auto;
   margin-right:auto;
+  padding-left: 20px;
+  padding-right: 20px;
   margin-top:30px;
   margin-bottom:30px;
   text-shadow: 2px 2px 5px rgb(40, 190, 178);
@@ -207,8 +209,10 @@ a:active{
       color: #1D0E0E;
       text-align: center;
       font-family: CGF Locust Resistance;
-      background-image: url("testimage.gif");
+      background-image: url("background.gif");
       background-color: #cccccc;  
       line-height: 2; }
+    h2 {
+      font-size: 5.5em;}
    .mobile_device_480px{display: block;}
    .desktop {display: none;} }
