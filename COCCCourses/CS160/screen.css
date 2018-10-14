@@ -214,6 +214,8 @@ a:active{
       background-color: #cccccc;  
       line-height: 2; }
     h2 {
-      font-size: 5.5em;}
+      font-size: 4em;}
+    h1 {
+      font-size: 5em;}
    .mobile_device_480px{display: block;}
    .desktop {display: none;} }
