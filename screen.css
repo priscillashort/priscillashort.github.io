@@ -97,7 +97,6 @@ h2 {
   font-size: 5.5em;
   color: rgb(147, 164, 180);
   width:70%;
-  height:180px;
   border-radius:100px;
   background-size: 1500px;
   margin-left: auto;
@@ -214,7 +213,9 @@ a:active{
       background-color: #cccccc;  
       line-height: 2; }
     h2 {
-      font-size: 4em;}
+      font-size: 4em;
+      height:180px;
+      vertical-align: middle;}
     h1 {
       font-size: 5em;}
    .mobile_device_480px{display: block;}
