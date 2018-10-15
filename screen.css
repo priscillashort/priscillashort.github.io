@@ -215,8 +215,9 @@ a:active{
     h2 {
       font-size: 4em;
       height:180px;
+      padding-top: 30px;
       vertical-align: middle;}
     h1 {
-      font-size: 5em;}
+      font-size: 4em;}
    .mobile_device_480px{display: block;}
    .desktop {display: none;} }
