@@ -96,7 +96,7 @@ h2 {
   font-family: Brush Script MT;
   font-size: 5.5em;
   color: rgb(147, 164, 180);
-  width:70%;
+  width:80%;
   border-radius:100px;
   background-size: 1500px;
   margin-left: auto;
@@ -216,7 +216,8 @@ a:active{
       font-size: 4em;
       height:180px;
       padding-top: 40px;
-      vertical-align: middle;}
+      vertical-align: middle;
+      width:70%;}
     h1 {
       font-size: 4em;}
    .mobile_device_480px{display: block;}
