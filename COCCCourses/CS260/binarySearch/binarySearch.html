@@ -36,10 +36,10 @@
 			<a href="CompareBinarySearches.py" download="CompareBinarySearches.py">Run/Download python file File</a>
     </p>
     <br>
-    <script src="https://pastebin.com/embed_js/30KnLrJQ"></script>
+    <script src="https://pastebin.com/embed_js/U0VxQbPE"></script>
     <br>
     <h3>
-      Description of problem:
+      Description of Excercise:
       <br>
       Use the binary search functions given in the text (recursive and iterative).
       Generate a random, ordered list of integers and do a benchmark analysis for each one.
@@ -48,7 +48,7 @@
       <br>
       Answer:
       <br>
-      the slice operator in Python, used in the recursive version is actually O(k).
+      The slice operator in Python, used in the recursive version is actually O(k).
       This means that the binary search using slice will not perform in strict logarithmic time, which makes it slower in its current state.
       <br>
       <br>
@@ -56,6 +56,34 @@
     </h3>
     <br>
     <img class="bordersingle" src="binaryCompareOutput.PNG" alt="binaryCompareOutput" style="width:800px;height:700px;">
+    <br>
+    <h3>
+      If the recursive version of the binary search is implemented by passing start and end values for the list
+      instead of slicing the list. The recursive binary search becomes more efficient and can truly operate as a 
+      log n function
+    </h3>
+    <br>
+    <p>
+			<a href="CompareBinarySearchesNoSlice.py" download="CompareBinarySearchesNoSlice.py">Run/Download python file File</a>
+    </p>
+    <br>
+    <script src="https://pastebin.com/embed_js/DfbriEZX"></script>
+    <br>
+    <h3>
+        Description of Excercise:
+        <br>
+        Implement the binary search using recursion without the slice operator.
+        Recall that you will need to pass the list along with the starting and
+        ending index values for the sublist. Generate a random, ordered list of
+        integers and do a benchmark analysis.
+        <br>
+        <br>
+        See output of code below.
+    </h3>
+    <br>
+    <img class="bordersingle" src="binaryCompareOutputNoSlice.PNG" alt="binaryCompareOutputNoSlice" style="width:800px;height:700px;">
+    <br>
+    <br>
     <h2>
       <a href="../CS260.html">CS260 Home</a>
     </h2>
